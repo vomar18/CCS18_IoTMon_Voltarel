@@ -18,7 +18,7 @@ def main() {
 	// Get correlations
 	def fileData = new File(args[0])	// use: source.groovy
 	def descriptions = new File("../2_physical_channel_identification/app-description.JSON")	// save descriptions
-	//def trigger_action = new File("cd ../2_physical_channel_identification/app-description.JSON")	// save trigger-action
+	//def trigger_action = new File("../2_physical_channel_identification/trigger-action.JSON")	// save trigger-action
 
 	def correlationsData = getRelations(fileData, descriptions) 
 	

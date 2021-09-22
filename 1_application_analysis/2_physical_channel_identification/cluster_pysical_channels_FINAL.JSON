@@ -1,0 +1,9 @@
+{
+"temperature":"['air_conditioner', 'heater', 'humidity', 'moisture', 'sensor', 'sensors', 'sleep', 'temp', 'thermostat', 'weather', 'temperature']",
+"humidity":"['air_conditioner', 'brightness', 'heater', 'lighting', 'moisture', 'temperature', 'thermostat', 'weather', 'humidity']",
+"illumination":"['brightness', 'bulbs', 'camera', 'cameras', 'candle', 'color', 'colors', 'hue', 'lighting', 'lights', 'light']",
+"motion":"['camera', 'sensor', 'motion']",
+"location":"['device', 'hub', 'place', 'presence', 'settings', 'space', 'station', 'weather', 'location']",
+"smoke":"['air_conditioner', 'alarm', 'brightness', 'fire', 'heater', 'humidity', 'leaks', 'moisture', 'occupant', 'sirens', 'temperature', 'thermostat', 'carbon_monoxide']",
+"leakage":"['chat', 'mail', 'mailbox', 'message', 'notification', 'notifications', 'phone', 'pictures', 'text', 'users', 'warning', 'messages']"
+}

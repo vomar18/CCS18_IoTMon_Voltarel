@@ -1,9 +1,9 @@
 {
-"temperature":"['air_conditioner', 'brightness', 'carbon_monoxide', 'heater', 'humidity', 'moisture', 'sensor', 'sensors', 'sleep', 'temp', 'thermostat', 'weather']",
-"humidity":"['air_conditioner', 'brightness', 'carbon_monoxide', 'fire', 'heater', 'lighting', 'moisture', 'temperature', 'thermostat', 'weather']",
-"light":"['brightness', 'bulbs', 'camera', 'cameras', 'candle', 'color', 'colors', 'hue', 'lighting', 'lights']",
-"motion":"['camera', 'sensor']",
-"location":"['device', 'hub', 'place', 'presence', 'settings', 'space', 'station', 'weather']",
-"carbon_monoxide":"['air_conditioner', 'alarm', 'bathroom', 'brightness', 'fire', 'garage', 'heater', 'humidity', 'leaks', 'moisture', 'occupant', 'sirens', 'temperature', 'thermostat']",
-"messages":"['chat', 'mail', 'mailbox', 'message', 'notification', 'notifications', 'phone', 'pictures', 'text', 'users', 'warning']"
+"temperature":"['air_conditioner', 'brightness', 'carbon_monoxide', 'heater', 'humidity', 'moisture', 'sensor', 'sensors', 'sleep', 'temp', 'thermostat', 'weather', 'temperature']",
+"humidity":"['air_conditioner', 'brightness', 'carbon_monoxide', 'fire', 'heater', 'lighting', 'moisture', 'temperature', 'thermostat', 'weather', 'humidity']",
+"illumination":"['brightness', 'bulbs', 'camera', 'cameras', 'candle', 'color', 'colors', 'hue', 'lighting', 'lights', 'light']",
+"motion":"['camera', 'sensor', 'motion']",
+"location":"['device', 'hub', 'place', 'presence', 'settings', 'space', 'station', 'weather', 'location']",
+"smoke":"['air_conditioner', 'alarm', 'bathroom', 'brightness', 'fire', 'garage', 'heater', 'humidity', 'leaks', 'moisture', 'occupant', 'sirens', 'temperature', 'thermostat', 'carbon_monoxide']",
+"leakage":"['chat', 'mail', 'mailbox', 'message', 'notification', 'notifications', 'phone', 'pictures', 'text', 'users', 'warning', 'messages']",
 }
