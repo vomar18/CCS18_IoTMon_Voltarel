@@ -17,11 +17,12 @@ def main() {
 	println "****************************\t\t\tStart parsing tool"
 	// Get correlations
 	def fileData = new File(args[0])	// use: source.groovy
-	def trigger_action = new File("analysis/trigger-action.JSON")	// save trigger-action
+	def descriptions = new File("../2_physical_channel_identification/app-description.JSON")	// save descriptions
+	//def trigger_action = new File("cd ../2_physical_channel_identification/app-description.JSON")	// save trigger-action
 
-	def correlationsData = getRelations(fileData, trigger_action) 
+	def correlationsData = getRelations(fileData, descriptions) 
 	
-	
+	/*
 	// Unpack data
 	def description = correlationsData[0]
 	def relations = correlationsData[1]
@@ -30,12 +31,12 @@ def main() {
 	println GraphWithRelations.create(description, gr[0], gr[1])
 
 	//println Graph.create(description, relations)
-
+*/
 	println "--------- END ------------------"
 }
 
 // getRelations takes a file and outputs the relations between them
-def getRelations(inputFile, trigger_action) {
+def getRelations(inputFile, myFile) {
 
 	CompilationUnit cu = new CompilationUnit()
 	cu.addSource(inputFile)
@@ -46,9 +47,8 @@ def getRelations(inputFile, trigger_action) {
 
 	// from here start to save info into txt/Json file
 
-	//def myFile = new File("analysis_NEW/app-description.JSON")	// saving descriptions
-	//myFile.append("\""+AST+"\":") 	// saving descriptions
-	trigger_action.append("\""+AST+"\":\n{")	// saving trigger-action
+	myFile.append("\""+AST+"\":") 	// saving descriptions: app name
+	//trigger_action.append("\""+AST+"\":\n{")	// saving trigger-action
 	println "AST dell'app - " + inputFile + ": " + cu.getAST()
 	println "classe dell'AST:" + AST
 
@@ -57,8 +57,9 @@ def getRelations(inputFile, trigger_action) {
 	
 	def runMethod = methods["run"].getCode()
 	println "****************************\t\t\tanalysing the run method:"
-	def corr = Correlate.sync(runMethod, methods, trigger_action)
-	trigger_action.append("},\n")
+	def corr = Correlate.sync(runMethod, methods, myFile)
+	//myFile.append("},\n")
+
 	return corr
 }
 
@@ -70,13 +71,14 @@ def generateFunctionMap(methodArray) {
 	}
 	println "Methods found inside the app:"
 	def i = 0
+	/*
 	for (key in functionMap.keySet()) {
     	print i
 		print " "
 		println(key)
 		i++
 	}
-
+*/
 	return functionMap
 }
 
