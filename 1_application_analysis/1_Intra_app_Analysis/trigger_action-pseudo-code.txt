@@ -1,0 +1,34 @@
+input:
+    code of an official Samsung Smartapp
+
+output:
+    a dictionary made of
+    {
+    "trigger_channel_1":[ [action_1.capability, action_1],[action_2.capability, action_2]],
+    "trigger_channel_x":[ [action_1.capability, action_1],[action_2.capability, action_2]]
+    }
+
+runMethod <-- get the run method /* save code of method run */
+/* save app description */
+app_inputs[]
+
+foreach MethodCallExpression in runMethod
+    foreach ArgumentListExpression
+        ClosureExpression
+        foreach ExpressionStatement
+            foreach methodcallExpression
+                app_inputs <-- inputs
+
+installed_Code <-- get installed Code /* save code of method installed */
+inputHandlers /* handlers that manage physical channels */ 
+foreach MethodCallExpression in installed_Code
+    if subscribe:
+        inputHandlers <-- [variable, capability, callback]
+    if schedule:
+        inputHandlers <-- [timeVariable, "time", callback]
+
+foreach inputHandlers 
+    if inputHandlers manage app_inputs
+        /* save "trigger_channel" */
+        foreach MethodCallExpression in inputHandlers
+            /* save couple [action.capability, action] */
