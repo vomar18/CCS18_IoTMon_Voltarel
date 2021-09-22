@@ -1,0 +1,41 @@
+input:
+    all Official Samsung Smartapp descriptions
+    list of POS accepted
+    similarity percentage level (description and channel centroids)
+output:
+    physical channel identified with correlated keywords
+
+foreach app_description do 
+    /* apply Stanford NLP and exstrapolate the NN and NNS */
+    foreach exstrapolated_word do
+        if word2vect accept word
+            keywords <-- {exstrapolated_word}
+
+    if keywords == 0
+        /* no keywords found inside the description */
+    elif keywords == 1
+        set_of_keywords <-- {keywords} 
+    elif keywords == 2
+        set_of_keywords <-- {couple of keywords} 
+    else 
+        similarity_matrix[keywords, keywords] <-- 1
+        foreach keywords
+            foreach keywords
+                similarity_matrix[keywords, keywords] <-- distance between words
+                if distance between words >= percentage level description
+                    set_of_keywords <-- {couple of words}
+
+/* now you process all the most similar NN and NNS */
+channel_matrix[set_of_keywords, set_of_keywords] <- 0
+foreach word in set_of_keywords
+    foreach word in set_of_keywords
+        channel_matrix[keywords, keywords] <-- distance between words
+
+/* now you extrapolate only the most similar keywords */
+physical_channel[set_of_keywords, set_of_keywords] <- 0
+foreach word in set_of_keywords
+    foreach word in set_of_keywords
+        if distance between words >= percentage level centroids
+        physical_channel[keywords, keywords] <-- {couple of words}
+
+/* save the physical_channel with the most correlated keywords */
