@@ -6,13 +6,13 @@ output:
     physical channel identified with correlated keywords
 
 foreach app_description do 
-    /* apply Stanford NLP and exstrapolate the NN and NNS */
-    foreach exstrapolated_word do
+    /* apply Stanford NLP and extrapolate the NN and NNS */
+    foreach extrapolated_word do
         if word2vect accept word
             keywords <-- {exstrapolated_word}
 
     if keywords == 0
-        /* no keywords found inside the description */
+        /* no keywords found inside app description */
     elif keywords == 1
         set_of_keywords <-- {keywords} 
     elif keywords == 2
@@ -21,21 +21,21 @@ foreach app_description do
         similarity_matrix[keywords, keywords] <-- 1
         foreach keywords
             foreach keywords
-                similarity_matrix[keywords, keywords] <-- distance between words
-                if distance between words >= percentage level description
+                similarity_matrix[keywords, keywords] <-- similaroty between words
+                if similarity between words >= percentage level description
                     set_of_keywords <-- {couple of words}
 
-/* now you process all the most similar NN and NNS */
+/* now process all the most similar NN and NNS */
 channel_matrix[set_of_keywords, set_of_keywords] <- 0
 foreach word in set_of_keywords
     foreach word in set_of_keywords
         channel_matrix[keywords, keywords] <-- distance between words
 
-/* now you extrapolate only the most similar keywords */
+/* now extrapolate only the most similar keywords */
 physical_channel[set_of_keywords, set_of_keywords] <- 0
 foreach word in set_of_keywords
     foreach word in set_of_keywords
-        if distance between words >= percentage level centroids
-        physical_channel[keywords, keywords] <-- {couple of words}
+        if similarity between words >= percentage level centroids
+            physical_channel[keywords, keywords] <-- {couple of words}
 
 /* save the physical_channel with the most correlated keywords */
