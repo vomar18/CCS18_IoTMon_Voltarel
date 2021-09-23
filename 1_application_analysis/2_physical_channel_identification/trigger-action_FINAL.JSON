@@ -1,0 +1,293 @@
+{
+"beacon-control":
+{	"capability.beacon":[["capability.switch","switch.on"], ["capability.switch","switch.off"], ["capability.lock","lock.unlock"], ["capability.switch","switch.on"], ["capability.switch","switch.off"], ["capability.lock","lock.lock"] ]
+},
+"big-turn-off":
+{	"capability.location":[["capability.switch","switch.off"] ],
+	"capability.app":[["capability.switch","switch.off"] ]
+},
+"big-turn-on":
+{	"capability.location":[["capability.switch","switch.on"] ],
+	"capability.app":[["capability.switch","switch.on"] ]
+},
+"bon-voyage":
+{	"capability.presenceSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["locationMode","locationMode.setLocationMode"] ]
+},
+"brighten-dark-places":
+{	"capability.contactSensor":[["capability.switch","switch.on"]]
+},
+"brighten-my-path":
+{	"capability.motionSensor":[["capability.switch","switch.on"] ]
+},
+"button-controller":
+{	"capability.button":[["locationMode","locationMode.setLocationMode"], ["sendAction","sendPush"], ["sendAction","sendSms"] ]
+},
+"camera-power-scheduler":
+{	"time":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"cameras-on-when-im-away":
+{	"capability.presenceSensor":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"carpool-notifier":
+{	"capability.presenceSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"close-the-valve":
+{	"capability.waterSensor":[["capability.valve","valve.close"], ["sendAction","sendPush"], ["sendAction","sendSms"]]
+},
+"curling-iron":
+{	"capability.motionSensor":[["capability.switch","switch.on"], ["capability.switch","switch.off"]],
+	"capability.presenceSensor":[["capability.switch","switch.off"] ]
+},
+"darken-behind-me":
+{	"capability.motionSensor":[["capability.switch","switch.off"] ]
+},
+"double-tap":
+{	"capability.switch":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"dry-the-wetspot":
+{	"capability.waterSensor":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"elder-care-daily-routine":
+{	"time":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"] ]
+},
+"elder-care-slip-fall":
+{	
+	"capability.motionSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ]
+},
+"energy-alerts":
+{	"capability.powerMeter":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"] ]
+},
+"energy-saver":
+{	"capability.powerMeter":[["capability.switch","switch.off"] ]
+},
+"feed-my-pet":
+{	"time":[["device.PetFeederShield","device.PetFeederShield.feed"] ]
+},
+"flood-alert":
+{	"capability.waterSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ]
+},
+"forgiving-security":
+{	"capability.contactSensor":[["sendAction","sendPush"], ["sendAction","sendSms"], ["capability.switch","switch.on"], ["capability.alarm","alarm.both"] ],
+	"capability.motionSensor":[["sendAction","sendPush"], ["sendAction","sendSms"], ["capability.switch","switch.on"], ["capability.alarm","alarm.both"] ]
+},
+"garage-door-monitor":
+{	"capability.threeAxis":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"] ]
+},
+"garage-door-opener":
+{	"capability.app":[["capability.switch","switch.on"] ],
+	"capability.switch":[["capability.switch","switch.off"] ]
+},
+"good-night":
+{	
+	"capability.motionSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["locationMode","locationMode.setLocationMode"] ],
+	"capability.switch":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["locationMode","locationMode.setLocationMode"] ],
+	"capability.location":[]
+},
+"greetings-earthling":
+{	"capability.presenceSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["locationMode","locationMode.setLocationMode"] ]
+},
+"habit-helper":
+{	"time":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"has-barkley-been-fed":
+{	"time":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"hub-ip-notifier":
+{	"hub":[]
+},
+"humidity-alert":
+{	"capability.relativeHumidityMeasurement":[["sendAction","sendPush"], ["sendAction","sendSms"], ["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"it-moved":
+{	"capability.accelerationSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"its-too-cold":
+{	"capability.temperatureMeasurement":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["capability.switch","switch.on"] ]
+},
+"its-too-hot":
+{	"capability.temperatureMeasurement":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["capability.switch","switch.on"] ]
+},
+"keep-me-cozy":
+{	"capability.thermostat":[],
+	"capability.location":[["capability.thermostat","thermostat.setHeatingSetpoint"], ["capability.thermostat","thermostat.setCoolingSetpoint"], ["capability.thermostat","thermostat.poll"] ],
+	"capability.app":[["capability.thermostat","thermostat.setHeatingSetpoint"], ["capability.thermostat","thermostat.setCoolingSetpoint"], ["capability.thermostat","thermostat.poll"] ]
+},
+"keep-me-cozy-ii":
+{	"capability.location":[["capability.thermostat","thermostat.setCoolingSetpoint"], ["capability.thermostat","thermostat.setHeatingSetpoint"], ["capability.thermostat","thermostat.poll"] ],
+	"capability.temperatureMeasurement":[["capability.thermostat","thermostat.setCoolingSetpoint"], ["capability.thermostat","thermostat.setHeatingSetpoint"], ["capability.thermostat","thermostat.poll"] ],
+	"capability.thermostat":[["capability.thermostat","thermostat.setCoolingSetpoint"], ["capability.thermostat","thermostat.setHeatingSetpoint"], ["capability.thermostat","thermostat.poll"] ]
+},
+"laundry-monitor":
+{	
+	"capability.accelerationSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"], ["capability.switch","switch.on"] ]
+},
+"left-it-open":
+{	"capability.contactSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"] ]
+},
+"let-there-be-dark":
+{	"capability.contactSensor":[["capability.switch","switch.currentValue"], ["capability.switch","switch.off"], ["capability.switch","switch.on"] ]
+},
+"let-there-be-light":
+{	"capability.contactSensor":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"light-follows-me":
+{	"capability.motionSensor":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"lights-off-when-closed":
+{	"capability.contactSensor":[["capability.switch","switch.off"] ]
+},
+"light-up-the-night":
+{	"capability.illuminanceMeasurement":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"lock-it-at-a-specific-time":
+{	"time":[["sendAction","sendPush"], ["sendAction","sendSms"], ["capability.lock","lock.lock"] ]
+},
+"lock-it-when-i-leave":
+{	"capability.presenceSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["capability.lock","lock.unlock"], ["capability.lock","lock.lock"] ]
+},
+"mail-arrived":
+{	"capability.accelerationSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"] ]
+},
+"make-it-so":
+{	"capability.location":[["capability.switch","switch.each"], ["capability.thermostat","thermostat.each"], ["capability.lock","lock.each"] ],
+	"capability.app":[["capability.switch","switch.each"], ["capability.thermostat","thermostat.each"], ["capability.lock","lock.each"] ]
+},
+"medicine-management-contact-sensor":
+{	"capability.contactSensor":[["capability.colorControl","colorControl.setHue"], ["capability.colorControl","colorControl.off"] ],
+	"time":[["sendAction","sendPush"] ]
+},
+"mini-hue-controller":
+{	"capability.button":[["capability.colorControl","colorControl.setLevel"], ["capability.colorControl","colorControl.setColor"], ["capability.colorControl","colorControl.off"], ["capability.colorControl","colorControl.on"] ]
+},
+"nfc-tag-toggle":
+{	"capability.touchSensor":[["capability.switch","switch.each"], ["capability.lock","lock.each"], ["capability.doorControl","doorControl.each"] ],
+	"capability.app":[["capability.switch","switch.each"], ["capability.lock","lock.each"], ["capability.doorControl","doorControl.each"] ]
+},
+"notify-me-when-it-opens":
+{	"capability.contactSensor":[["sendAction","sendPush"] ]
+},
+"once-a-day":
+{	"time":[["capability.switch","switch.on"], ["capability.switch","switch.off"]]
+},
+"photo-burst-when":
+{	"capability.contactSensor":[["capability.imageCapture","imageCapture.take"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ],
+	"capability.accelerationSensor":[["capability.imageCapture","imageCapture.take"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ],
+	"capability.motionSensor":[["capability.imageCapture","imageCapture.take"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ],
+	"capability.switch":[["capability.imageCapture","imageCapture.take"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ],
+	"capability.presenceSensor":[["capability.imageCapture","imageCapture.take"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ]
+},
+"power-allowance":
+{	"capability.switch":[["capability.switch","switch.off"] ]
+},
+"presence-change-push":
+{	"capability.presenceSensor":[["sendAction","sendPush"] ]
+},
+"presence-change-text":
+{	"capability.presenceSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"ready-for-rain":
+{	"capability.contactSensor":[["sendAction","sendPush"], ["sendAction","sendSms"] ]
+},
+"ridiculously-automated-garage-door":
+{
+	"capability.presenceSensor":[["capability.momentary","momentary.push"], ["sendAction","sendPush"] ],
+	"capability.accelerationSensor":[["capability.momentary","momentary.push"] ],
+	"capability.contactSensor":[["capability.momentary","momentary.push"] ]
+},
+"rise-and-shine":
+{	"capability.motionSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["locationMode","locationMode.setLocationMode"], ["capability.switch","switch.on"] ],
+	"capability.location":[]
+},
+"scheduled-mode-change":
+{	"time":[["locationMode","locationMode.setLocationMode"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ]
+},
+"sleepy-time":
+{	"device.jawboneUser":[]
+},
+"smart-care-daily-routine":
+{	"time":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"] ]
+},
+"smart-care-detect-motion":
+{	
+	"capability.motionSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ]
+},
+"smart-humidifier":
+{	"capability.relativeHumidityMeasurement":[["sendAction","sendPush"], ["sendAction","sendSms"], ["capability.switch","switch.off"], ["capability.switch","switch.on"] ]
+},
+"smart-nightlight":
+{	"capability.motionSensor":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"smart-security":
+{	"capability.motionSensor":[["sendAction","sendPush"], ["locationMode","locationMode.setLocationMode"], ["capability.alarm","alarm.strobe"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["capability.alarm","alarm.both"] ],
+	"capability.contactSensor":[["sendAction","sendPush"], ["locationMode","locationMode.setLocationMode"], ["capability.alarm","alarm.strobe"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["capability.alarm","alarm.both"] ],
+	"capability.alarm":[["capability.alarm","alarm.off"] ],
+	"capability.app":[["capability.alarm","alarm.off"] ]
+},
+"smart-turn-it-on":
+{},
+"sunrise-sunset":
+{
+	"capability.location":[]
+},
+"text-me-when-it-opens":
+{	"capability.contactSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"text-me-when-theres-motion-and-im-not-here":
+{	"capability.motionSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"the-big-switch":
+{	
+	"capability.switch":[["capability.switchLevel","switchLevel.setLevel"] ]
+},
+"the-flasher":
+{	"capability.contactSensor":[["number","number.times"] ],
+	"capability.accelerationSensor":[["number","number.times"] ],
+	"capability.motionSensor":[["number","number.times"] ],
+	"capability.switch":[["number","number.times"] ],
+	"capability.presenceSensor":[["number","number.times"] ]
+},
+"the-gun-case-moved":
+{	"capability.accelerationSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"thermostat-auto-off":
+{	"capability.contactSensor":[["capability.thermostat","thermostat.currentValue"], ["capability.thermostat","thermostat.off"], ["capability.thermostat","thermostat.setThermostatMode"] ]
+},
+"thermostats":
+{	
+	"capability.smokeDetector":[["capability.thermostat","thermostat.setThermostatMode"], ["sendAction","sendNotificationToContacts"] ],
+	"capability.carbonMonoxideDetector":[["capability.thermostat","thermostat.setThermostatMode"], ["sendAction","sendNotificationToContacts"] ]
+},
+"turn-it-on-for-5-minutes":
+{	"capability.contactSensor":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"turn-it-on-when-im-here":
+{	"capability.presenceSensor":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"turn-it-on-when-it-opens":
+{	"capability.contactSensor":[["capability.switch","switch.on"] ]
+},
+"turn-on-only-if-i-arrive-after-sunset":
+{	"capability.presenceSensor":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"undead-early-warning":
+{	"capability.contactSensor":[["capability.switch","switch.on"] ]
+},
+"unlock-it-when-i-arrive":
+{	"capability.presenceSensor":[["sendAction","sendPush"], ["capability.lock","lock.unlock"] ]
+},
+"virtual-thermostat":
+{	"capability.temperatureMeasurement":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ],
+	"capability.motionSensor":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"when-its-going-to-rain":
+{	"time":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"whole-house-fan":
+{	
+	"capability.temperatureMeasurement":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ],
+	"capability.thermostat":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ],
+	"capability.contactSensor":[["capability.switch","switch.on"], ["capability.switch","switch.off"] ]
+},
+"working-from-home":
+{}
+}
