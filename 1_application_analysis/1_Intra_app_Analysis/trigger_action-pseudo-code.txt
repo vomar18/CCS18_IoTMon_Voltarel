@@ -14,7 +14,6 @@ app_inputs[]
 
 foreach MethodCallExpression in runMethod
     foreach ArgumentListExpression
-        ClosureExpression
         foreach ExpressionStatement
             foreach methodcallExpression
                 app_inputs <-- inputs
