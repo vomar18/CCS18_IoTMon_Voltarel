@@ -21,7 +21,7 @@ public class Outputs {
 			//println capVar.size()//each{it -> println "$it"}
 			def inputCapability = capVar[1]
 			println "___-----__" +inputCapability
-			//myFile.append("\t\""+inputCapability+"\":[")
+			myFile.append("\t\""+inputCapability+"\":[")
 			def outputs = findOutputs(function, allInp, allFuncs)
 			def nonDupes = removeDuplicateElements(outputs)
 			println "outputs found:"
@@ -29,12 +29,12 @@ public class Outputs {
 			nonDupes.eachWithIndex{item, index -> 
 				println "$index: $item"
 				def tripla = item
-				/*if(tripla[1] == "send")
+				if(tripla[1] == "send")
 					myFile.append("[\""+tripla[0]+"\",\""+tripla[2]+"\"], ")
 				else
 					myFile.append("[\""+tripla[0]+"\",\""+tripla[0].replace("capability.", "") +"."+tripla[2]+"\"], ")
-			*/}
-			//myFile.append("],\n")
+			}
+			myFile.append("],\n")
 			println "----------" + function.getName() + " è ok"
 			println ""
 			return [[inputCapability, input[1]], nonDupes]

@@ -20,12 +20,12 @@ public class Correlate {
 		println "description of the app: " + description + "\n"
 
 
-		myFile.append("\""+description+"\",\n")
+		//myFile.append("\""+description+"\",\n")
 		println "****************************\t\t\tanalysing the preferences block{}:"
 		def inputs = getInputArray(prefs)			
 		println "\n-------- TROVATI TUTTI INPUT e CAPABILITIES tot: " + inputs.size()
 		//myFile.append("----- List of all inputs and capabilities found tot: " + inputs.size()+"\n")
-		//inputs.eachWithIndex{item , index -> println "$index: $item"}
+		inputs.eachWithIndex{item , index -> println "$index: $item"}
 
 
 		def translateFunc = { handler ->
