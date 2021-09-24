@@ -1,0 +1,9 @@
+{
+    "temperature": ["capability.contactSensor", "capability.waterSensor", "capability.temperatureMeasurement", "capability.thermostat", "capability.location", "capability.relativeHumidityMeasurement", "capability.motionSensor"],
+    "humidity": ["capability.relativeHumidityMeasurement", "capability.location", "capability.contactSensor"], 
+    "illumination": ["capability.presenceSensor", "capability.contactSensor", "capability.touchSensor", "capability.location"],
+    "location": ["capability.beacon", "capability.motionSensor", "capability.presenceSensor", "capability.contactSensor", "capability.location", "capability.smokeDetector", "capability.carbonMonoxideDetector"],
+    "motion": ["capability.motionSensor", "capability.location", "capability.presenceSensor", "capability.accelerationSensor", "capability.contactSensor"],
+    "smoke": ["capability.temperatureMeasurement", "capability.thermostat", "capability.contactSensor"],
+    "leakage": ["capability.presenceSensor", "capability.waterSensor", "capability.threeAxis", "capability.accelerationSensor", "capability.contactSensor", "capability.motionSensor"]
+}
