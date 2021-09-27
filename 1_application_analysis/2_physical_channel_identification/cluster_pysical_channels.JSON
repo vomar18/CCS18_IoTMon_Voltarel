@@ -1,9 +1,9 @@
 {
-"temperature":["air_conditioner","ambient","brightness","carbon_monoxide","heater","humidity","moisture","sensor","sensors","thermostat","ventilation","water","weather","temperature",],
-"humidity":["Weather","air_conditioner","ambient","brightness","carbon_monoxide","moisture","temperature","thermostat","ventilation","weather","humidity",],
-"illumination":["LED","air_conditioner","alarm","appliances","brightness","bulbs","camera","cameras","candle","colors","heater","light","lighting","sirens","switch","switches","thermostat","lights",],
-"motion":["Motion","action","motion",],
-"location":["area","place","location",],
-"smoke":["air_conditioner","ambient","fire","heater","humidity","leaks","moisture","temperature","thermostat","ventilation","carbon_monoxide",],
-"leakage":["SMS","chat","mail","mailbox","message","notification","notifications","phone","pictures","text","messages",],
+    "temperature": ["air_conditioner", "ambient", "brightness", "carbon_monoxide", "heater", "humidity", "moisture", "sensor", "sensors", "thermostat", "ventilation", "water", "weather", "temperature"],
+    "humidity": ["Weather", "air_conditioner", "ambient", "brightness", "carbon_monoxide", "moisture", "temperature", "thermostat", "ventilation", "weather", "humidity"], 
+    "illumination": ["LED", "air_conditioner", "alarm", "appliances", "brightness", "bulbs", "camera", "cameras", "candle", "colors", "heater", "light", "lighting", "sirens", "switch", "switches", "thermostat", "lights"],
+    "motion": ["Motion", "action", "motion"], 
+    "location": ["area", "place", "location"], 
+    "smoke": ["air_conditioner", "ambient", "fire", "heater", "humidity", "leaks", "moisture", "temperature", "thermostat", "ventilation", "carbon_monoxide"], 
+    "leakage": ["SMS", "chat", "mail", "mailbox", "message", "notification", "notifications", "phone", "pictures", "text", "messages"]
 }
