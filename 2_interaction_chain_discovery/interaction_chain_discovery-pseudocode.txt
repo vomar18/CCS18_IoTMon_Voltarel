@@ -1,0 +1,24 @@
+input
+    AP_tr,ac = all pair of trigger-action
+    C_ca,ch = the correlations between physical channels and capabilities (table 3 - p839)
+    S_ca = set of NON physical channel capabilities
+output
+    all inter-app interaction chain
+
+/* create a list of pair made by all possible trigger-action */
+/* now implement the alg 1 (cap 4.3.2 - p836) */
+INTAC <-- [] /* list of all inter-app interaction chain
+foreach action = i of AP_tr,ca
+    foreach trigger = j of C_ca,ch
+     if i == j then
+        /* do nothing ...*/
+    foreach physical_channel
+        foreach capability = k of physical_channel
+            foreach capability = m of physical_channel
+                if (action_i == k) and (trigger_j == m) and (action_i != trigger_j):
+                    if not physical interaction chain already saved:
+                        INTAC <-- {action_i, physical_channel, trigger_j}
+    foreach system_channel
+        if action_i == system_channel and trigger_j == system_channel:
+            if not system interaction chain already saved:
+                INTAC <-- {action_i, physical_channel, trigger_j}
