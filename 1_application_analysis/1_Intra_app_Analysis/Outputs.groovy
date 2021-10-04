@@ -20,10 +20,15 @@ public class Outputs {
 		if (capVar != null){
 			//println capVar.size()//each{it -> println "$it"}
 			def inputCapability = capVar[1]
-			println "___-----__" +inputCapability
-			myFile.append("\t\""+inputCapability+"\":[")
+			def trigger_capability = inputCapability.replace("capability.", "") // clear the trigger capability
+
+			
+			println "___-----__" +trigger_capability
+			myFile.append("\t\""+trigger_capability+"\":[")
+
 			def outputs = findOutputs(function, allInp, allFuncs)
 			def nonDupes = removeDuplicateElements(outputs)
+
 			println "outputs found:"
 			//myFile.append("\n-----for the handler: "+function.getName()+"\tfound inputs(trigger) and correlated output(action)\n")
 			nonDupes.eachWithIndex{item, index -> 
@@ -32,7 +37,7 @@ public class Outputs {
 				if(tripla[1] == "send")
 					myFile.append("[\""+tripla[0]+"\",\""+tripla[2]+"\"], ")
 				else
-					myFile.append("[\""+tripla[0]+"\",\""+tripla[0].replace("capability.", "") +"."+tripla[2]+"\"], ")
+					myFile.append("[\""+ tripla[0].replace("capability.", "") +"\",\""+tripla[0].replace("capability.", "") +"."+tripla[2]+"\"], ")
 			}
 			myFile.append("],\n")
 			println "----------" + function.getName() + " è ok"

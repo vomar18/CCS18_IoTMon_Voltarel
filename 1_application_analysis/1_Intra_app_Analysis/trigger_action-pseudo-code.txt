@@ -3,6 +3,7 @@ input:
 
 output:
     a dictionary made of
+    Smartapp name:
     {
     "trigger_channel_1":[ [action_1.capability, action_1],[action_2.capability, action_2]],
     "trigger_channel_x":[ [action_1.capability, action_1],[action_2.capability, action_2]]

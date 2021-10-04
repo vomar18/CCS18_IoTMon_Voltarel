@@ -1,0 +1,318 @@
+{
+"beacon-control":
+{	"beacon":[["switch","switch.on"], ["switch","switch.off"], ["lock","lock.unlock"], ["switch","switch.on"], ["switch","switch.off"], ["lock","lock.lock"] ]
+},
+"big-turn-off":
+{	"location":[["switch","switch.off"]],
+	"app":[["switch","switch.off"] ]
+},
+"big-turn-on":
+{	"location":[["switch","switch.on"] ],
+	"app":[["switch","switch.on"] ]
+},
+"bon-voyage":
+{	"presenceSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["locationMode","locationMode.setLocationMode"] ]
+},
+"brighten-dark-places":
+{	"contactSensor":[["switch","switch.on"] ]
+},
+"brighten-my-path":
+{	"motionSensor":[["switch","switch.on"] ]
+},
+"button-controller":
+{	"button":[["locationMode","locationMode.setLocationMode"], ["sendAction","sendPush"], ["sendAction","sendSms"]]
+},
+"camera-power-scheduler":
+{	"time":[["switch","switch.on"] ]
+},
+"cameras-on-when-im-away":
+{	"presenceSensor":[["switch","switch.on"], ["switch","switch.off"] ]
+},
+"carpool-notifier":
+{	"presenceSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"close-the-valve":
+{	"waterSensor":[["valve","valve.close"], ["sendAction","sendPush"], ["sendAction","sendSms"] ]
+},
+"curling-iron":
+{	"motionSensor":[["switch","switch.on"] ],
+	"presenceSensor":[["switch","switch.off"] ]
+},
+"darken-behind-me":
+{	"motionSensor":[["switch","switch.off"] ]
+},
+"double-tap":
+{	"switch":[["switch","switch.on"], ["switch","switch.off"]]
+},
+"dry-the-wetspot":
+{	
+	"waterSensor":[["switch","switch.on"], ["switch","switch.off"] ]
+},
+"elder-care-daily-routine":
+{	"time":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"] ]
+},
+"elder-care-slip-fall":
+{	
+	"motionSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ]
+},
+"energy-alerts":
+{	"powerMeter":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"] ]
+},
+"energy-saver":
+{	"powerMeter":[["switch","switch.off"] ]
+},
+"feed-my-pet":
+{	"time":[["device.PetFeederShield","device.PetFeederShield.feed"] ]
+},
+"flood-alert":
+{	"waterSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ]
+},
+"forgiving-security":
+{	"contactSensor":[["sendAction","sendPush"], ["sendAction","sendSms"], ["switch","switch.on"], ["alarm","alarm.both"] ],
+	"motionSensor":[["sendAction","sendPush"], ["sendAction","sendSms"], ["switch","switch.on"], ["alarm","alarm.both"]]
+},
+"garage-door-monitor":
+{	"threeAxis":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"] ]
+},
+"garage-door-opener":
+{	"app":[["switch","switch.on"] ],
+	"switch":[["switch","switch.off"] ]
+},
+"good-night":
+{	
+	"motionSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["locationMode","locationMode.setLocationMode"] ],
+	"switch":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["locationMode","locationMode.setLocationMode"] ]
+},
+"greetings-earthling":
+{	"presenceSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["locationMode","locationMode.setLocationMode"] ]
+},
+"habit-helper":
+{	"time":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"has-barkley-been-fed":
+{	"time":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"hub-ip-notifier":
+{	"hub":[]
+},
+"humidity-alert":
+{	"relativeHumidityMeasurement":[["sendAction","sendPush"], ["sendAction","sendSms"], ["switch","switch.on"], ["switch","switch.off"] ]
+},
+"it-moved":
+{	"accelerationSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"its-too-cold":
+{	"temperatureMeasurement":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["switch","switch.on"] ]
+},
+"its-too-hot":
+{	"temperatureMeasurement":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["switch","switch.on"] ]
+},
+"keep-me-cozy":
+{	
+	"thermostat":[],
+	"location":[["thermostat","thermostat.setHeatingSetpoint"], ["thermostat","thermostat.setCoolingSetpoint"], ["thermostat","thermostat.poll"] ],
+	"app":[["thermostat","thermostat.setHeatingSetpoint"], ["thermostat","thermostat.setCoolingSetpoint"], ["thermostat","thermostat.poll"] ]
+},
+"keep-me-cozy-ii":
+{	"location":[["thermostat","thermostat.setCoolingSetpoint"], ["thermostat","thermostat.setHeatingSetpoint"], ["thermostat","thermostat.poll"] ],
+	"temperatureMeasurement":[["thermostat","thermostat.setCoolingSetpoint"], ["thermostat","thermostat.setHeatingSetpoint"], ["thermostat","thermostat.poll"]],
+	"thermostat":[["thermostat","thermostat.setCoolingSetpoint"], ["thermostat","thermostat.setHeatingSetpoint"], ["thermostat","thermostat.poll"] ]
+},
+"laundry-monitor":
+{	
+	"accelerationSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"], ["switch","switch.on"] ]
+},
+"left-it-open":
+{	"contactSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"] ]
+},
+"let-there-be-dark":
+{	"contactSensor":[["switch","switch.currentValue"], ["switch","switch.off"], ["switch","switch.on"] ]
+},
+"let-there-be-light":
+{	"contactSensor":[["switch","switch.on"], ["switch","switch.off"] ]
+},
+"light-follows-me":
+{	"motionSensor":[["switch","switch.on"], ["switch","switch.off"] ]
+},
+"lights-off-when-closed":
+{	"contactSensor":[["switch","switch.off"] ]
+},
+"light-up-the-night":
+{	"illuminanceMeasurement":[["switch","switch.on"], ["switch","switch.off"] ]
+},
+"lock-it-at-a-specific-time":
+{	"time":[["sendAction","sendPush"], ["sendAction","sendSms"], ["lock","lock.lock"] ]
+},
+"lock-it-when-i-leave":
+{	"presenceSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["lock","lock.unlock"], ["lock","lock.lock"] ]
+},
+"mail-arrived":
+{	"accelerationSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"] ]
+},
+"make-it-so":
+{	"location":[["switch","switch.each"], ["thermostat","thermostat.each"], ["lock","lock.each"] ],
+	"app":[["switch","switch.each"], ["thermostat","thermostat.each"], ["lock","lock.each"] ]
+},
+"medicine-management-contact-sensor":
+{	"contactSensor":[["colorControl","colorControl.setHue"], ["colorControl","colorControl.off"] ],
+	"time":[["sendAction","sendPush"] ]
+},
+"mini-hue-controller":
+{	"button":[["colorControl","colorControl.setLevel"], ["colorControl","colorControl.setColor"], ["colorControl","colorControl.off"], ["colorControl","colorControl.on"] ]
+},
+"nfc-tag-toggle":
+{	"touchSensor":[["switch","switch.each"], ["lock","lock.each"], ["doorControl","doorControl.each"] ],
+	"app":[["switch","switch.each"], ["lock","lock.each"], ["doorControl","doorControl.each"] ]
+},
+"notify-me-when":
+{	"button":[["sendAction","sendNotificationToContacts"] ],
+	"contactSensor":[["sendAction","sendNotificationToContacts"] ],
+	"accelerationSensor":[["sendAction","sendNotificationToContacts"] ],
+	"motionSensor":[["sendAction","sendNotificationToContacts"] ],
+	"switch":[["sendAction","sendNotificationToContacts"] ],
+	"presenceSensor":[["sendAction","sendNotificationToContacts"] ],
+	"smokeDetector":[["sendAction","sendNotificationToContacts"] ],
+	"waterSensor":[["sendAction","sendNotificationToContacts"] ]
+},
+"notify-me-when-it-opens":
+{	"contactSensor":[["sendAction","sendPush"] ]
+},
+"notify-me-with-hue":
+{	"app":[["colorControl","colorControl.each"], ["colorControl","colorControl.setColor"] ],
+	"contactSensor":[["colorControl","colorControl.each"], ["colorControl","colorControl.setColor"] ],
+	"accelerationSensor":[["colorControl","colorControl.each"], ["colorControl","colorControl.setColor"]],
+	"motionSensor":[["colorControl","colorControl.each"], ["colorControl","colorControl.setColor"] ],
+	"switch":[["colorControl","colorControl.each"], ["colorControl","colorControl.setColor"] ],
+	"presenceSensor":[["colorControl","colorControl.each"], ["colorControl","colorControl.setColor"] ],
+	"smokeDetector":[["colorControl","colorControl.each"], ["colorControl","colorControl.setColor"] ],
+	"waterSensor":[["colorControl","colorControl.each"], ["colorControl","colorControl.setColor"] ],
+	"button":[["colorControl","colorControl.each"], ["colorControl","colorControl.setColor"] ]
+},
+"once-a-day":
+{	
+	"time":[["switch","switch.off"] ]
+},
+"photo-burst-when":
+{	"contactSensor":[["imageCapture","imageCapture.take"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ],
+	"accelerationSensor":[["imageCapture","imageCapture.take"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ],
+	"motionSensor":[["imageCapture","imageCapture.take"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ],
+	"switch":[["imageCapture","imageCapture.take"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ],
+	"presenceSensor":[["imageCapture","imageCapture.take"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"]]
+},
+"power-allowance":
+{	"switch":[["switch","switch.off"]]
+},
+"presence-change-push":
+{	"presenceSensor":[["sendAction","sendPush"]]
+},
+"presence-change-text":
+{	"presenceSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"ready-for-rain":
+{	"contactSensor":[["sendAction","sendPush"], ["sendAction","sendSms"]]
+},
+"ridiculously-automated-garage-door":
+{
+	"presenceSensor":[["momentary","momentary.push"], ["sendAction","sendPush"]],
+	"accelerationSensor":[["momentary","momentary.push"] ],
+	"contactSensor":[["momentary","momentary.push"] ]
+},
+"rise-and-shine":
+{	"motionSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"], ["locationMode","locationMode.setLocationMode"], ["switch","switch.on"]]
+
+},
+"scheduled-mode-change":
+{	"time":[["locationMode","locationMode.setLocationMode"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ]
+},
+"sleepy-time":
+{	"device.jawboneUser":[]
+},
+"smart-care-daily-routine":
+{	"time":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["sendAction","sendPush"]]
+},
+"smart-care-detect-motion":
+{	
+	"motionSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendPush"], ["sendAction","sendSms"] ]
+},
+"smart-humidifier":
+{	"relativeHumidityMeasurement":[["sendAction","sendPush"], ["sendAction","sendSms"], ["switch","switch.off"], ["switch","switch.on"] ]
+},
+"smart-nightlight":
+{	"motionSensor":[["switch","switch.on"], ["switch","switch.off"] ]
+},
+"smart-security":
+{	"motionSensor":[["sendAction","sendPush"], ["locationMode","locationMode.setLocationMode"], ["alarm","alarm.strobe"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["alarm","alarm.both"] ],
+	"contactSensor":[["sendAction","sendPush"], ["locationMode","locationMode.setLocationMode"], ["alarm","alarm.strobe"], ["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"], ["alarm","alarm.both"] ],
+	"alarm":[["alarm","alarm.off"] ],
+	"app":[["alarm","alarm.off"] ]
+},
+"smart-turn-it-on":
+{},
+"step-notifier":
+{
+	"device.jawboneUser":[["sendAction","sendNotificationToContacts"], ["musicPlayer","musicPlayer.playTrackAndResume"], ["musicPlayer","musicPlayer.playTrackAtVolume"], ["musicPlayer","musicPlayer.playTrack"], ["musicPlayer","musicPlayer.on"], ["colorControl","colorControl.each"], ["colorControl","colorControl.setColor"], ["switch","switch.each"] ]
+},
+"sunrise-sunset":
+{	
+	"location":[]
+},
+"text-me-when-it-opens":
+{	"contactSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"text-me-when-theres-motion-and-im-not-here":
+{	"motionSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"the-big-switch":
+{	
+	"switch":[["switchLevel","switchLevel.setLevel"] ]
+},
+"the-flasher":
+{	"contactSensor":[["number","number.times"] ],
+	"accelerationSensor":[["number","number.times"] ],
+	"motionSensor":[["number","number.times"]],
+	"switch":[["number","number.times"] ],
+	"presenceSensor":[["number","number.times"]]
+},
+"the-gun-case-moved":
+{	"accelerationSensor":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"thermostat-auto-off":
+{	"contactSensor":[["thermostat","thermostat.currentValue"], ["thermostat","thermostat.off"], ["thermostat","thermostat.setThermostatMode"] ]
+},
+"thermostats":
+{	
+	"smokeDetector":[["thermostat","thermostat.setThermostatMode"], ["sendAction","sendNotificationToContacts"] ],
+	"carbonMonoxideDetector":[["thermostat","thermostat.setThermostatMode"], ["sendAction","sendNotificationToContacts"] ]
+},
+"turn-it-on-for-5-minutes":
+{	"contactSensor":[["switch","switch.on"], ["switch","switch.off"] ]
+},
+"turn-it-on-when-im-here":
+{	"presenceSensor":[["switch","switch.on"], ["switch","switch.off"] ]
+},
+"turn-it-on-when-it-opens":
+{	"contactSensor":[["switch","switch.on"] ]
+},
+"turn-on-only-if-i-arrive-after-sunset":
+{	"presenceSensor":[["switch","switch.on"], ["switch","switch.off"] ]
+},
+"undead-early-warning":
+{	"contactSensor":[["switch","switch.on"] ]
+},
+"unlock-it-when-i-arrive":
+{	"presenceSensor":[["sendAction","sendPush"], ["lock","lock.unlock"] ]
+},
+"virtual-thermostat":
+{	"temperatureMeasurement":[["switch","switch.on"], ["switch","switch.off"] ],
+	"motionSensor":[["switch","switch.on"], ["switch","switch.off"] ]
+},
+"when-its-going-to-rain":
+{	"time":[["sendAction","sendNotificationToContacts"], ["sendAction","sendSms"] ]
+},
+"whole-house-fan":
+{	
+	"temperatureMeasurement":[["switch","switch.on"], ["switch","switch.off"] ],
+	"thermostat":[["switch","switch.on"], ["switch","switch.off"] ],
+	"contactSensor":[["switch","switch.on"], ["switch","switch.off"] ]
+}
+}
