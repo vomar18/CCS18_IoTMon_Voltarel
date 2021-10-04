@@ -17,11 +17,11 @@ def main() {
 	println "****************************\t\t\tStart parsing tool"
 	// Get correlations
 	def fileData = new File(args[0])	// use: source.groovy
-	//def descriptions = new File("../2_physical_channel_identification/app-description.JSON")	// save descriptions
-	def trigger_action = new File("trigger-action_2_version.JSON")	// save trigger-action
+	def descriptions = new File("app-description.JSON")	// save descriptions
+	//def trigger_action = new File("trigger-action_2_version.JSON")	// save trigger-action
 
-	//def correlationsData = getRelations(fileData, descriptions) 
-	def correlationsData = getRelations(fileData, trigger_action) 
+	def correlationsData = getRelations(fileData, descriptions) 
+	//def correlationsData = getRelations(fileData, trigger_action) 
 	
 	
 	// Unpack data
@@ -48,8 +48,8 @@ def getRelations(inputFile, myFile) {
 
 	// from here start to save info into txt/Json file
 
-	//myFile.append("\""+AST+"\":") 	// saving descriptions: app name
-	myFile.append("\""+AST+"\":\n{")	// saving trigger-action
+	myFile.append("\""+AST+"\":") 	// saving descriptions: app name
+	//myFile.append("\""+AST+"\":\n{")	// saving trigger-action
 	println "AST dell'app - " + inputFile + ": " + cu.getAST()
 	println "classe dell'AST:" + AST
 
@@ -59,7 +59,9 @@ def getRelations(inputFile, myFile) {
 	def runMethod = methods["run"].getCode()
 	println "****************************\t\t\tanalysing the run method:"
 	def corr = Correlate.sync(runMethod, methods, myFile)
-	myFile.append("},\n")
+	//
+	//myFile.append("},\n") // saving trigger-action
+	//
 
 	return corr
 }
@@ -72,14 +74,7 @@ def generateFunctionMap(methodArray) {
 	}
 	println "Methods found inside the app:"
 	def i = 0
-	/*
-	for (key in functionMap.keySet()) {
-    	print i
-		print " "
-		println(key)
-		i++
-	}
-*/
+
 	return functionMap
 }
 

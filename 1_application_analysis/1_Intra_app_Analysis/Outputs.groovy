@@ -24,13 +24,18 @@ public class Outputs {
 
 			
 			println "___-----__" +trigger_capability
-			myFile.append("\t\""+trigger_capability+"\":[")
+			//
+			//myFile.append("\t\""+trigger_capability+"\":[") // saving trigger-action
+			//
 
 			def outputs = findOutputs(function, allInp, allFuncs)
 			def nonDupes = removeDuplicateElements(outputs)
 
 			println "outputs found:"
-			//myFile.append("\n-----for the handler: "+function.getName()+"\tfound inputs(trigger) and correlated output(action)\n")
+			//
+			// saving trigger-action
+			//
+			/* 
 			nonDupes.eachWithIndex{item, index -> 
 				println "$index: $item"
 				def tripla = item
@@ -40,6 +45,9 @@ public class Outputs {
 					myFile.append("[\""+ tripla[0].replace("capability.", "") +"\",\""+tripla[0].replace("capability.", "") +"."+tripla[2]+"\"], ")
 			}
 			myFile.append("],\n")
+			*/
+			//
+
 			println "----------" + function.getName() + " è ok"
 			println ""
 			return [[inputCapability, input[1]], nonDupes]
