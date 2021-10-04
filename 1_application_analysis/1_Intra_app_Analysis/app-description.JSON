@@ -127,5 +127,7 @@
 "whole-house-fan":"Toggle a whole house fan (switch) when: Outside is cooler than inside, Inside is above x temp, Thermostat is off",
 "withings-manager":"Connect With Withings",
 "working-from-home":"If after a particular time of day a certain person is still at home, trigger a 'Working From Home' action.",
-"yoics-connect":"Connect and Control your Yoics Enabled Devices"
+"yoics-connect":"Connect and Control your Yoics Enabled Devices",
+"smart-humidity-vent":"When the humidity reaches a specified level, activate one or more fans.",
+"smart-home-monitor":"monitor your home for intrusion, fire, carbon_monoxide, leaks and more."
 }
