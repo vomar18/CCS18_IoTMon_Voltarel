@@ -1,0 +1,36 @@
+input:
+    couples of trigger-actions
+    list of app descriptions
+    physical channel centroids (and related cluster)
+output:
+    correlation between physical channels and capabilities (table 3 - p839)
+
+app_to_channel = {} /* dictionary of [smartapp] : correlated physical_channel */
+foreach app_description do 
+    /* apply Stanford NLP and exstrapolate the NN */
+    foreach exstrapolated_word do
+        if word2vect accept word
+            keywords <-- {exstrapolated_word}
+    
+    similarity_matrix <-- {}
+    if keywords == 0
+        /* no keywords found inside the description */
+    else
+        if keywords == 1
+            foreach cluster
+                similarity_matrix <-- similarity(keywords , cluster_centroids )
+        else 
+            foreach cluster
+                foreach keyword 
+                    partial_similarity <-- similarity(keyword, cluster_centroids)  /* calculates the similarity between the keyword and the physical_channel cluster */
+                similarity_matrix <-- partial_similarity/tot_keywords    /* calculates the similarity between the number of keywords extrapolated from app description
+		   for that specific channel */
+        
+	    channel_association <-- ""
+        max_value <-- 0
+        foreach cluster /* find the best association */
+            if similarity_matrix of that channel >= max_value
+                /* save the new max similarity value*/
+                /* save the channel associated */ 
+        /* save the result inside the app_to_channel dictionary */
+
