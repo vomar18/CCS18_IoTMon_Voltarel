@@ -9,7 +9,7 @@ output:
     "trigger_channel_x":[ [action_1.capability, action_1],[action_2.capability, action_2]]
     }
 
-runMethod <-- get the run method /* save code of method run */
+runMethod <-- get the run method /* save code of run method */
 /* save app description */
 app_inputs[]
 
@@ -20,7 +20,7 @@ foreach MethodCallExpression in runMethod
                 app_inputs <-- inputs
 
 installed_Code <-- get installed Code /* save code of method installed */
-inputHandlers /* handlers that manage physical channels */ 
+inputHandlers[]    /* handlers that manage physical channels */ 
 foreach MethodCallExpression in installed_Code
     if subscribe:
         inputHandlers <-- [variable, capability, callback]
