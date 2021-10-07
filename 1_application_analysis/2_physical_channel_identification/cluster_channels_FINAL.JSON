@@ -1,6 +1,6 @@
 {
     "temperature": ["air_conditioner", "ambient", "heater", "temp", "thermostat", "ventilation", "temperature"], 
-    "humidity": ["moisture", "temperature", "thermostat", "ventilation", "humidity"], 
+    "humidity": ["moisture", "ventilation", "humidity"], 
     "illumination": [ "brightness", "bulbs", "cameras", "candle", "colors", "light", "lighting", "switch", "switches", "lights"], 
     "motion": ["action", "motion"], 
     "location": ["area", "hub", "place", "location"], 
