@@ -8,4 +8,5 @@ the code used for parse all the Official Samsung SmartThings apps and exstrapola
 I always change the structure of the parse tool (comment or uncomment operations) in order to:
 1. extrapolate app description
 2. extrapolate trigger/action
+
 because since that it's not always possible to extrapolate trigger/action from every app
