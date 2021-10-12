@@ -1,1 +1,12 @@
-{"temperature": ["thermostat"], "humidity": ["relative humidity ", "temperature"], "illumination": ["beacon", "color", "illumination", "image capture", "momentary", "power", "switch", "switch level"], "motion": ["acceleration", "motion ", "send action"], "location": ["location", "music player", "presence"], "smoke": ["alarm", "carbon_monoxide", "smoke"], "leakage": ["app", "jawbone user", "valve", "water sensor"], "time": ["number", "three axis", "time"], "locationMode": ["locationMode"], "lock": ["button", "contact", "pet feeder shield", "door control", "lock", "touch"]}
+{
+    "temperature": ["thermostat"], 
+    "humidity": ["relative humidity ", "temperature"], 
+    "illumination": ["beacon", "color", "illumination", "image capture", "momentary", "power", "switch", "switch level"], 
+    "motion": ["acceleration", "motion ", "send action"], 
+    "location": ["location", "music player", "presence"], 
+    "smoke": ["alarm", "carbon_monoxide", "smoke"], 
+    "leakage": ["app", "jawbone user", "valve", "water sensor"], 
+    "time": ["number", "three axis", "time"], 
+    "locationMode": ["locationMode"], 
+    "lock": ["button", "contact", "pet feeder shield", "door control", "lock", "touch"]
+}
