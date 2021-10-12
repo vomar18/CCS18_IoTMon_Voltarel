@@ -6,7 +6,5 @@
     "location": ["area", "hub", "place", "location"], 
     "smoke": [ "fire", "heater", "leaks", "temperature", "ventilation", "carbon_monoxide"], 
     "leakage": [ "leaks", "lever", "sensor", "sensors", "switches", "valve","water", "weather", "sms"], 
-    "time": ["amount", "anytime", "day", "days", "hour", "minutes", "period", "times", "week", "time"], 
-    "locationMode": ["location", "mode"], 
-    "lock": ["door", "doors", "lever", "push", "turn", "lock"]
+    "sound": [ "sirens", "song", "sound"]
 }
