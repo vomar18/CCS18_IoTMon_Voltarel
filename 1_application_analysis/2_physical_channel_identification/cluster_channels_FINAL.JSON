@@ -2,7 +2,7 @@
     "temperature": ["air_conditioner", "ambient", "heater", "temp", "thermostat", "ventilation", "temperature"], 
     "humidity": ["moisture", "ventilation", "humidity"], 
     "illumination": [ "brightness", "bulbs", "cameras", "candle", "colors", "light", "lighting", "switch", "switches", "lights"], 
-    "motion": ["action", "motion"], 
+    "motion": ["action", "motion","speed", "contacting"], 
     "location": ["area", "hub", "place", "location"], 
     "smoke": [ "fire", "heater", "leaks", "temperature", "ventilation", "carbon_monoxide"], 
     "leakage": [ "leaks", "lever", "sensor", "sensors", "switches", "valve","water", "weather", "sms"], 
