@@ -1,12 +1,1 @@
-{
-    "temperature": ["thermostat"], 
-    "humidity": ["relative humidity ", "temperature"], 
-    "illumination": ["beacon", "color", "illumination", "image capture", "momentary", "power", "switch", "switch level"], 
-    "motion": ["acceleration", "motion ", "send action"], 
-    "location": ["location", "music player", "presence"], 
-    "smoke": ["alarm", "carbon_monoxide", "smoke"], 
-    "leakage": ["app", "jawbone user", "valve", "water sensor"], 
-    "time": ["number", "three axis", "time"], 
-    "locationMode": ["locationMode"], 
-    "lock": ["button", "contact", "pet feeder shield", "door control", "lock", "touch"]
-}
+{"temperature": ["thermostat", "switch air_conditioner"], "humidity": ["relative humidity ", "temperature", "switch vent"], "illumination": ["beacon", "illumination", "flash lights", "switch", "switch level", "switch bulb"], "motion": ["acceleration", "motion "], "location": ["location", "presence", "three axis space"], "smoke": ["carbon_monoxide", "contact", "smoke"], "leakage": ["valve", "water sensor"], "sound": ["music player"]}
