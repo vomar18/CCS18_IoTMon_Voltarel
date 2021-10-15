@@ -1,1 +1,10 @@
-{"temperature": ["thermostat", "switch air_conditioner"], "humidity": ["relative humidity ", "temperature", "switch vent"], "illumination": ["beacon", "illumination", "flash lights", "switch", "switch level", "switch bulb"], "motion": ["acceleration", "contact", "motion"], "location": ["location", "presence", "three axis space"], "smoke": ["carbon_monoxide", "smoke"], "leakage": ["valve", "water sensor"], "sound": ["music player"]}
+{
+    "temperature": ["thermostat", "switch air_conditioner"], 
+    "humidity": ["relative humidity ", "temperature", "switch vent"], 
+    "illumination": ["beacon", "illumination", "flash lights", "switch", "switch level", "switch bulb"], 
+    "motion": ["acceleration", "contact", "motion"], 
+    "location": ["location", "presence", "three axis space"], 
+    "smoke": ["carbon_monoxide", "smoke"], 
+    "leakage": ["valve", "water sensor"], 
+    "sound": ["music player"]
+}
